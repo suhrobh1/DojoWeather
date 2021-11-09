@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, button, select{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#mainBox{
+    margin: 0 auto;
+    flex-flow: column;
+}
+
+#bannerSection, #cityAndTempSection, #weekdaysSection, #mainBox, #bottomSection #cookieSection, #cities, #tempSection, .dailyWeather, .dailyTemp, #cookieSection{
+    display:flex;
+    justify-content: space-between;
+}
+
+#bannerSection, .dailyTemp, .dailyWeather, #tempSection, #cities, #cityAndTempSection, #weekdaysSection, #mainBox, #cookieSection{  /* delete later*/
+    border: 1px dotted blue; /* delete later*/
+}
+
+#bannerSection{
+    background-color: rgb(145, 200, 236);
+    color: white;
+    height: 4em;
+    padding: 0 31em 0 30em;
+}
+
+#bannerSection, .dailyWeather, #cityAndTempSection, #cookieSection{
+    align-items: center;
+} 
+
+#cities{
+    width: 15em; 
+}
+.cityNames{
+    font-size: 1.1em;
+}
+#bottomSection{
+    width: 36em;
+    align-self: center;
+}
+
+#cityAndTempSection{
+    height: 4em;
+    border-bottom: 3px solid black;
+}
+
+#currentCity{
+    font-size: 1.5em;
+}
+
+#tempSection{
+    width: 13em; 
+}
+
+.dailyWeather{
+    flex-flow: column;
+    justify-content: space-between;
+    width: 8em;
+    background-color: rgb(233, 233, 233);
+    height: 13em;
+    padding: 0.5em 0 1em 0;
+}
+
+.dayName{
+    font-size: 1.3em;
+}
+
+.weatherImage{
+    height: 6em;
+    border-radius: 50%;
+}
+
+.dailyTemp{
+    width: 5.6em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.dayTemp{
+    color: red;
+}
+.nightTemp{
+    color:rgb(19, 120, 214);
+}
+
+#cookieSection{
+    height: 6.5em;
+    padding: 0 2em 0 0.6em;
+}
+
+#cookieImage{
+    width:3.5em;
+    margin-right: 0.6em;
+}
+
+#cookieTitle{
+    font-weight: bold;
+}
+#cookieText{
+    font-size: 0.9em;
+    width: 29em;
+}
+
+#accept{
+    
+    width: 5em;
+    background-color: rgb(19, 120, 214);
+    box-shadow: 0.2em 0.2em black;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="mainBox">
+        <div id="bannerSection">
+            <div><h1>DojoWeather</h1></div>
+            <div id="cities">
+                <div class="cityNames">Burbank</div>
+                <div class="cityNames">Chicago</div>
+                <div class="cityNames">Dallas</div>
+            </div>
+        </div>
+        <div id="bottomSection">
+            <div id="cityAndTempSection">
+                <div id="currentCity">San Jose</div>
+                <div id="tempSection">
+                    <p>show temperature in</p>    <!-- do I need a DIV -->
+                    <select name="unit" id="unit" onchange="pickUnit(this)">
+                        <option>&deg;F</option>
+                        <option>&deg;C</option>
+                    </select>
+                </div>
+            </div>
+            <div id="weekdaysSection">
+                <div class="dailyWeather">
+                    <div class="dayName">Today</div>
+                    <div><img class="weatherImage" src="some_rain.png" alt="Rain Clouds"></div> <!--do I need a DIV or just img by itself-->
+                    <div><p>some rain</p></div>     <!-- do I need a DIV -->
+                    <div class="dailyTemp">
+                        <div><p class="dayTemp">24&deg;</p></div>            <!-- do I need a DIV -->
+                        <div><p class="nightTemp">18&deg;</p></div>            <!-- do I need a DIV -->
+                    </div>
+                </div>
+                <div class="dailyWeather">
+                    <div class="dayName">Tomorrow</div>
+                    <div><img class="weatherImage"  src="some_sun.png" alt="Sun"></div> <!--do I need a DIV or just img by itself-->
+                    <div><p>some sun</p></div>     <!-- do I need a DIV -->
+                    <div class="dailyTemp">
+                        <div><p class="dayTemp">27&deg;</p></div>            <!-- do I need a DIV -->
+                        <div><p class="nightTemp">19&deg;</p></div>            <!-- do I need a DIV -->
+                    </div>
+                </div>
+                <div class="dailyWeather">
+                    <div class="dayName">Friday</div>
+                    <div><img class="weatherImage"  src="some_clouds.png" alt="Clouds"></div> <!--do I need a DIV or just img by itself-->
+                    <div><p>some clouds</p></div>     <!-- do I need a DIV -->
+                    <div class="dailyTemp">
+                        <div><p class="dayTemp">21&deg;</p></div>            <!-- do I need a DIV -->
+                        <div><p class="nightTemp">16&deg;</p></div>            <!-- do I need a DIV -->
+                    </div>
+                </div>
+                <div class="dailyWeather">
+                    <div class="dayName">Saturday</div>
+                    <div><img class="weatherImage"  src="some_sun.png" alt="Sun"></div> <!--do I need a DIV or just img by itself-->
+                    <div><p>some sun</p></div>     <!-- do I need a DIV -->
+                    <div class="dailyTemp">
+                        <div><p class="dayTemp">26&deg;</p></div>            <!-- do I need a DIV -->
+                        <div><p class="nightTemp">21&deg;</p></div>            <!-- do I need a DIV -->
+                    </div>
+                </div>
+            </div>
+            <div id="cookieSection">
+                <div><img id="cookieImage" src="cookie.png" alt="Cookie image"></div>
+                <div>
+                    <div><p id="cookieTitle">Stop! Cookie time</p></div><!-- do I need a DIV -->
+                    <div><p id="cookieText">We use cookies(sadly not the edible kind) to personalize content and ads, 
+                    to provide social media features and to analyse our traffic.<a href="#"> Read more...</a></p></div><!-- do I need a DIV -->
+                </div>
+                <div><button id="accept">I Accept</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
