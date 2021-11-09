@@ -16,9 +16,9 @@ body, button, select{
     justify-content: space-between;
 }
 
-#bannerSection, .dailyTemp, .dailyWeather, #tempSection, #cities, #cityAndTempSection, #weekdaysSection, #mainBox, #cookieSection{  /* delete later*/
-    border: 1px dotted blue; /* delete later*/
-}
+/* #bannerSection, .dailyTemp, .dailyWeather, #tempSection, #cities, #cityAndTempSection, #weekdaysSection, #mainBox, #cookieSection{ 
+    border: 1px dotted blue; 
+}                                                    COMENT OUT LATER!!!*/
 
 #bannerSection{
     background-color: rgb(145, 200, 236);
@@ -39,6 +39,7 @@ body, button, select{
 }
 #bottomSection{
     width: 36em;
+    height: 40em;
     align-self: center;
 }
 
@@ -62,6 +63,7 @@ body, button, select{
     background-color: rgb(233, 233, 233);
     height: 13em;
     padding: 0.5em 0 1em 0;
+    margin-top: 1em;
 }
 
 .dayName{
@@ -87,8 +89,10 @@ body, button, select{
 }
 
 #cookieSection{
-    height: 6.5em;
+    height: 6.4em;
     padding: 0 2em 0 0.6em;
+    border: 3px solid black;
+    margin-top: 0.3em;
 }
 
 #cookieImage{
