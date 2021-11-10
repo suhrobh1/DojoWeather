@@ -20,11 +20,18 @@ body, button, select{
     border: 1px dotted blue; 
 }                                                    COMENT OUT LATER!!!*/
 
-#bannerSection{
+#bannerSectionLarge{
+    display: flex;
+    justify-content: center;
     background-color: rgb(145, 200, 236);
     color: white;
     height: 4em;
-    padding: 0 31em 0 30em;
+}
+
+#bannerSection{
+    color: white;
+    height: 4em;
+    width: 36em;
 }
 
 #bannerSection, .dailyWeather, #cityAndTempSection, #cookieSection{
@@ -89,10 +96,13 @@ body, button, select{
 }
 
 #cookieSection{
-    height: 6.4em;
-    padding: 0 2em 0 0.6em;
+    position:fixed;
+    justify-content: center;
+    height: 6.2em;
+    padding: 0 1.5em 0 0.5em;
     border: 3px solid black;
     margin-top: 0.3em;
+    width: 33.7em;
 }
 
 #cookieImage{
@@ -104,7 +114,7 @@ body, button, select{
     font-weight: bold;
 }
 #cookieText{
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 29em;
 }
 
