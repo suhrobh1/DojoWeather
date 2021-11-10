@@ -26,9 +26,9 @@
 				<div id="currentCity">San Jose</div>
 				<div id="tempSection">
 					<p>show temperature in</p> <!-- do I need a DIV -->
-					<select name="unit" id="unit" onchange="pickUnit('todayDayTemp', 'todayNightTemp', 'tomorroDayTemp', 'tomorrowNightTemp', 'friDayTemp', 'friNightTemp', 'satDayTemp', 'satNightTemp')">
-                        <option>&deg;C</option>
-                        <option>&deg;F</option>
+					<select name="unit" id="unit" onchange="pickUnit(value)">
+                        <option value = "C">&deg;C</option>
+                        <option value = "F">&deg;F</option>
                     </select>
                 </div>
             </div>
